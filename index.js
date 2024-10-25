@@ -5,7 +5,7 @@ const app = express()
 
 
 
-app.use("/",()=>{
+app.use("/",(req,res)=>{
     setInterval(()=>{
         fetch('https://movie-booking-yj2w.onrender.com/')
     },20000)
